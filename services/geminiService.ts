@@ -17,7 +17,7 @@ export const analyzeWord = async (word: string): Promise<Omit<WordData, 'id' | '
       responseSchema: {
         type: Type.OBJECT,
         properties: {
-          kanji: { type: Type.STRING, description: "The word in Kanji or Kana" },
+          kanji: { type: Type.STRING, description: "The word in Kanji" },
           kana: { type: Type.STRING, description: "The reading in Hiragana/Katakana" },
           romaji: { type: Type.STRING, description: "Romanized reading" },
           meaning: { type: Type.STRING, description: "English definition" },
